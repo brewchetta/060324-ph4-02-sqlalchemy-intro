@@ -37,4 +37,8 @@ class Vegetable(db.Model):
     is_tasty = db.Column( db.Boolean, default=True )
 
     def to_dict(self):
-        return { "id": self.id, "name": self.name, "is_tasty": self.is_tasty }
+        return { 
+            "id": self.id, 
+            "name": self.name, 
+            "is_tasty": self.is_tasty 
+        }
